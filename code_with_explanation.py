@@ -121,7 +121,7 @@ Output:
 #***This is how the program will work**##
 top5 = bestModel.recommendProducts(1059637, 5)
 for i in range(5) :
-print "Artist %d: %s" % (i, artistData.filter(lambda id : id[0] == top5[i].product).collect()[0][1])
+  print "Artist %d: %s" % (i, artistData.filter(lambda id : id[0] == top5[i].product).collect()[0][1])
 '''
 Output:
 Artist 0: Brand New
